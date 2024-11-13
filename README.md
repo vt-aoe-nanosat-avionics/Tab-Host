@@ -47,7 +47,24 @@ TAB>
 - `bootloader_write_page [-v]`
 - `bootloader_write_page_addr32 [-v]`
 - `bootloader_jump [-v]`
-- `bootloader_power [-v]`
+- `bootloader_power [Mode] [-v]`
+    - Arguements:
+        - Mode: Power mode to enter
+            - Run
+            - Sleep
+            - Low-power run
+            - Low-power sleep
+            - Stop 0
+            - Stop 1
+            - Stop 2
+            - Standby
+            - Shutdown
+        - -v: Setting this will make the Tab command not print to the terminal
+    - Examples:
+        - `bootloader_power run`
+        - `bootloader_power sleep`
+        - `bootloader_power standby`
+
 - `app_get_telem [-v]`
 - `app_get_time [-v]`
 - `app_set_time [-v]`
